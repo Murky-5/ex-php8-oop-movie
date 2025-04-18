@@ -1,0 +1,132 @@
+[
+  {
+    "genre": "Azione",
+    "subgenres": [
+      "Supereroi",
+      "Spionaggio",
+      "Arte marziale",
+      "Guerra",
+      "Avventura d'azione"
+    ]
+  },
+  {
+    "genre": "Avventura",
+    "subgenres": ["Viaggio", "Esplorazione", "Survival", "Avventura fantastica"]
+  },
+  {
+    "genre": "Animazione",
+    "subgenres": ["2D", "3D", "Stop Motion", "Anime"]
+  },
+  {
+    "genre": "Biografico",
+    "subgenres": ["Storicizzato", "Sportivo", "Musicale", "Político"]
+  },
+  {
+    "genre": "Commedia",
+    "subgenres": ["Romantica", "Nera", "Slapstick", "Parodia", "Satirica"]
+  },
+  {
+    "genre": "Crimine",
+    "subgenres": ["Gangster", "Mafia", "Thriller poliziesco"]
+  },
+  {
+    "genre": "Documentario",
+    "subgenres": ["Biografico", "Natura", "Storico", "Investigativo"]
+  },
+  {
+    "genre": "Drammatico",
+    "subgenres": ["Psicologico", "Familiare", "Legale", "Storico", "Sociale"]
+  },
+  {
+    "genre": "Famiglia",
+    "subgenres": ["Animazione", "Commedia familiare"]
+  },
+  {
+    "genre": "Fantasy",
+    "subgenres": [
+      "Epic Fantasy",
+      "Urban Fantasy",
+      "Dark Fantasy",
+      "Sword and Sorcery"
+    ]
+  },
+  {
+    "genre": "Storico",
+    "subgenres": ["Epico", "Dramma storico", "Biografico"]
+  },
+  {
+    "genre": "Horror",
+    "subgenres": [
+      "Gothic Horror",
+      "Slasher",
+      "Parapsicologico",
+      "Zombi",
+      "Vampiri",
+      "Occulto"
+    ]
+  },
+  {
+    "genre": "Musicale",
+    "subgenres": ["Dramma musicale", "Commedia musicale"]
+  },
+  {
+    "genre": "Mistero",
+    "subgenres": ["Noir", "Giallo", "Investigativo"]
+  },
+  {
+    "genre": "Romantico",
+    "subgenres": ["Dramma romantico", "Commedia romantica", "Storico romantico"]
+  },
+  {
+    "genre": "Fantascienza",
+    "subgenres": ["Cyberpunk", "Space Opera", "Post-apocalittico", "Steampunk"]
+  },
+  {
+    "genre": "Sportivo",
+    "subgenres": ["Dramma sportivo", "Commedia sportiva"]
+  },
+  {
+    "genre": "Thriller",
+    "subgenres": ["Psicologico", "Conspiracy", "Horror Thriller", "Politico"]
+  },
+  {
+    "genre": "Guerra",
+    "subgenres": ["Storico", "Moderno", "Fredda"]
+  },
+  {
+    "genre": "Western",
+    "subgenres": ["Spaghetti Western", "Neowestern"]
+  },
+  {
+    "genre": "Noir",
+    "subgenres": ["Film Noir", "Neo-noir"]
+  },
+  {
+    "genre": "Eroico",
+    "subgenres": []
+  },
+  {
+    "genre": "Sperimentale",
+    "subgenres": []
+  },
+  {
+    "genre": "Indipendente",
+    "subgenres": []
+  },
+  {
+    "genre": "Avanguardia",
+    "subgenres": []
+  },
+  {
+    "genre": "Surrealista",
+    "subgenres": []
+  },
+  {
+    "genre": "Satirico",
+    "subgenres": []
+  },
+  {
+    "genre": "Sociologico",
+    "subgenres": []
+  }
+]

@@ -1,17 +1,43 @@
 <?php 
 class Genere {
     protected $Genere;
+    private $ListaGeneri;
 
     public function __construct($_genere)
-    {
-        if ($_genere == "fantasy") 
-        {
-            $this->Genere = $_genere;
+    {   
+        $json = file_get_contents('generi.json');
+        $this->ListaGeneri = json_decode($json, true);
+
+        $found = false;
+
+        foreach($this->ListaGeneri as $record) {
+
+            if (isset($record['genre'])) {
+                if (strtolower($_genere) == strtolower($record['genre'])) {
+                    $this->Genere = $_genere;
+                    $found = true;
+                    break;
+                }
+            }
+            
+            if (isset($record['subgenres']) && is_array($record['subgenres'])) {
+                foreach($record['subgenres'] as $subgenre) {
+                    if (strtolower($_genere) == strtolower($subgenre)) {
+                        $this->Genere = $_genere;
+                        $found = true;
+                        break 2;
+                    }
+                }
+            }
         }
-        else
-        {
-            $this->Genere = "riprova più tardi";
-        };
+
+        if (!$found) {
+            $this->Genere = "$_genere (Questo genere non è riconosciuto)";
+        }
+    }
+    
+    public function Genere() {
+        return $this->Genere;
     }
 };
 
@@ -26,11 +52,15 @@ class Movie {
         $this->Stelle = $_stelle;
         $this->Genere = $_genere;
     }
+    
+    public function Elenco() {
+        echo "Titolo: " . $this->Titolo . "</br>";
+        echo "Stelle: " . $this->Stelle . "</br>";
+        echo "Genere: " . $this->Genere->Genere() . "</br>";
+    }
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,19 +72,7 @@ class Movie {
     <?php 
     $genere = new Genere("fantasy");
     $film = new Movie("Pippo nel paese dell meraviglie", 5, $genere);
-    foreach((array)$film as $key => $value) 
-    {
-        if (is_object($value)) 
-        {
-        foreach((array)$value as $brother => $child) 
-        {
-                echo "$brother: $child </br>";
-        }
-    } else {
-        echo "$key: $value </br>";
-    }
-    };
-
+    $film->Elenco();
     ?>
 </body>
 </html>
