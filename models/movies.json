@@ -1,0 +1,262 @@
+[
+  {
+    "titolo": "Il Padrino",
+    "stelle": 5,
+    "genere": "Crimine"
+  },
+  {
+    "titolo": "La vita è bella",
+    "stelle": 4,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "Blade Runner",
+    "stelle": 4,
+    "genere": "Fantascienza"
+  },
+  {
+    "titolo": "Pulp Fiction",
+    "stelle": 5,
+    "genere": "Crimine"
+  },
+  {
+    "titolo": "Inception",
+    "stelle": 5,
+    "genere": "Fantascienza"
+  },
+  {
+    "titolo": "Il Signore degli Anelli: Il ritorno del re",
+    "stelle": 5,
+    "genere": "Fantasy"
+  },
+  {
+    "titolo": "Forrest Gump",
+    "stelle": 4,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "Fight Club",
+    "stelle": 5,
+    "genere": "Thriller"
+  },
+  {
+    "titolo": "Interstellar",
+    "stelle": 5,
+    "genere": "Fantascienza"
+  },
+  {
+    "titolo": "The Dark Knight",
+    "stelle": 5,
+    "genere": "Azione"
+  },
+  {
+    "titolo": "Il buono, il brutto e il cattivo",
+    "stelle": 4,
+    "genere": "Western"
+  },
+  {
+    "titolo": "Il silenzio degli innocenti",
+    "stelle": 4,
+    "genere": "Thriller"
+  },
+  {
+    "titolo": "La strada",
+    "stelle": 4,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "Schindler's List",
+    "stelle": 5,
+    "genere": "Storico"
+  },
+  {
+    "titolo": "The Shawshank Redemption",
+    "stelle": 5,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "Avatar",
+    "stelle": 4,
+    "genere": "Fantascienza"
+  },
+  {
+    "titolo": "Star Wars: Episodio IV - Una nuova speranza",
+    "stelle": 5,
+    "genere": "Fantascienza"
+  },
+  {
+    "titolo": "Jurassic Park",
+    "stelle": 4,
+    "genere": "Avventura"
+  },
+  {
+    "titolo": "Titanic",
+    "stelle": 4,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "Gladiator",
+    "stelle": 5,
+    "genere": "Azione"
+  },
+  {
+    "titolo": "The Matrix",
+    "stelle": 5,
+    "genere": "Fantascienza"
+  },
+  {
+    "titolo": "La La Land",
+    "stelle": 4,
+    "genere": "Musicale"
+  },
+  {
+    "titolo": "Mad Max: Fury Road",
+    "stelle": 5,
+    "genere": "Azione"
+  },
+  {
+    "titolo": "C'era una volta in America",
+    "stelle": 4,
+    "genere": "Crimine"
+  },
+  {
+    "titolo": "Se7en",
+    "stelle": 5,
+    "genere": "Thriller"
+  },
+  {
+    "titolo": "The Social Network",
+    "stelle": 4,
+    "genere": "Biografico"
+  },
+  {
+    "titolo": "The Departed",
+    "stelle": 5,
+    "genere": "Crimine"
+  },
+  {
+    "titolo": "Django Unchained",
+    "stelle": 5,
+    "genere": "Western"
+  },
+  {
+    "titolo": "The Grand Budapest Hotel",
+    "stelle": 4,
+    "genere": "Commedia"
+  },
+  {
+    "titolo": "Whiplash",
+    "stelle": 5,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "Parasite",
+    "stelle": 5,
+    "genere": "Thriller"
+  },
+  {
+    "titolo": "The Shape of Water",
+    "stelle": 4,
+    "genere": "Fantasy"
+  },
+  {
+    "titolo": "Moonlight",
+    "stelle": 4,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "12 anni schiavo",
+    "stelle": 5,
+    "genere": "Storico"
+  },
+  {
+    "titolo": "The King's Speech",
+    "stelle": 4,
+    "genere": "Storico"
+  },
+  {
+    "titolo": "Spotlight",
+    "stelle": 4,
+    "genere": "Drammatico"
+  },
+  {
+    "titolo": "The Revenant",
+    "stelle": 5,
+    "genere": "Avventura"
+  },
+  {
+    "titolo": "The Wolf of Wall Street",
+    "stelle": 4,
+    "genere": "Biografico"
+  },
+  {
+    "titolo": "Inside Out",
+    "stelle": 4,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Toy Story",
+    "stelle": 5,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Finding Nemo",
+    "stelle": 4,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Up",
+    "stelle": 5,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Coco",
+    "stelle": 4,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Zootopia",
+    "stelle": 4,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "The Revenant",
+    "stelle": 5,
+    "genere": "Avventura"
+  },
+  {
+    "titolo": "The Wolf of Wall Street",
+    "stelle": 4,
+    "genere": "Biografico"
+  },
+  {
+    "titolo": "Inside Out",
+    "stelle": 4,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Toy Story",
+    "stelle": 5,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Finding Nemo",
+    "stelle": 4,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Up",
+    "stelle": 5,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Coco",
+    "stelle": 4,
+    "genere": "Animazione"
+  },
+  {
+    "titolo": "Zootopia",
+    "stelle": 4,
+    "genere": "Animazione"
+  }
+]

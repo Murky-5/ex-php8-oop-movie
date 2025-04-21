@@ -1,73 +1,13 @@
 <?php 
 
-trait Pick {
-    protected $found;
-    
-    public function Genere() {
-        return $this->Genere;
-    }
-}
-class Genere {
-    protected $Genere;
-    private $ListaGeneri;
-    
-    use Pick;
+require_once 'logic/generi.php';
+require_once 'logic/movies.php';
 
-    public function __construct($_genere)
-    {   
-        $json = file_get_contents('generi.json');
-        $this->ListaGeneri = json_decode($json, true);
-        
-        
-        foreach($this->ListaGeneri as $record) {
-            
-            if (isset($record['genre'])) {
-                if (strtolower($_genere) == strtolower($record['genre'])) {
-                    $this->Genere = $_genere;
-                    $this->found = true;
-                    break;
-                }
-            }
-            
-            if (isset($record['subgenres']) && is_array($record['subgenres'])) {
-                foreach($record['subgenres'] as $subgenre) {
-                    if (strtolower($_genere) == strtolower($subgenre)) {
-                        $this->Genere = $_genere;
-                        $this->found = true;
-                        break 2;
-                    }
-                }
-            }
-        }
-        
-        if (!$this->found) {
-            $this->Genere = "$_genere (Questo genere non è riconosciuto)";
-        }
-    }
-    
-    
-};
-
-class Movie {
-    private $Titolo;
-    private $Stelle;
-    private $Genere;
-
-    public function __construct($_titolo, $_stelle, Genere $_genere)
-    {
-        $this->Titolo = $_titolo;
-        $this->Stelle = $_stelle;
-        $this->Genere = $_genere;
-    }
-    
-    public function Elenco() {
-        echo "Titolo: " . $this->Titolo . "</br>";
-        echo "Stelle: " . $this->Stelle . "</br>";
-        echo "Genere: " . $this->Genere->Genere() . "</br>";
-    }
-}
+$json = file_get_contents('models/movies.json');
+$movies = json_decode($json, true);
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,8 +18,10 @@ class Movie {
 <body>
     <?php 
     $genere = new Genere("fantasy");
-    $film = new Movie("Pippo nel paese dell meraviglie", 5, $genere);
-    $film->Elenco();
+    foreach($movies as $movie) {
+        $resoult = new Movie($movie['titolo'], $movie['stelle'], new Genere($movie['genere']));
+        $resoult->Elenco();
+    }
     ?>
 </body>
 </html>
