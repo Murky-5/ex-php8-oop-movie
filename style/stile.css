@@ -1,0 +1,38 @@
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: calc(25% - 20px); /* 4 boxes per row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .box {
+    width: calc(33.33% - 20px); /* 3 per row */
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    width: calc(50% - 20px); /* 2 per row */
+  }
+}
+@media (max-width: 480px) {
+  .box {
+    width: 100%; /* 1 per row */
+  }
+}

@@ -15,9 +15,21 @@ class Movie {
     }
     
     public function Elenco() {
-        echo "<div class='box'><div>Titolo: " . $this->Titolo . "</div></br>";
-        echo "<div>Stelle: " . $this->Stelle . "</div></br>";
-        echo "<div>Genere: " . $this->Genere->Genere() . "</div></div></br></br>";
+        echo "  <div class='box'>
+                    <div>
+                        Titolo: " . $this->Titolo . "
+                    </div>
+                    </br>";
+        echo "      <div>
+                        Stelle: " . $this->Stelle . "
+                    </div>
+                    </br>";
+        echo "      <div>
+                        Genere: " . $this->Genere->Genere() . "
+                    </div>
+                </div>
+                </br>
+                </br>";
     }
 }
 
