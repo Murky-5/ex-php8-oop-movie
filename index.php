@@ -28,12 +28,14 @@ $movies = json_decode($json, true);
       justify-content: center;
     }
     details {
-      position: relative; /* Per posizionare il dropdown relativamente al box */
+      position: relative;
       background-color: #fff;
       border: 1px solid #ddd;
       padding: 10px;
-      width: calc(fit-content + 40px); /* 4 box per riga con il nuovo gap */
+      width: calc(fit-content + 40px);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-top-right-radius: 10px;   /* nuovo */
+      border-bottom-right-radius: 10px; /* nuovo */
     }
     /* Nascondi il marker predefinito */
     summary {
@@ -41,8 +43,7 @@ $movies = json_decode($json, true);
       cursor: pointer;
       display: flex;
       align-items: center;
-      /* Imposto un gap nullo per non avere spazio tra titolo e freccetta */
-      gap: 0;
+      gap: 10px;
       padding: 0;
     }
     summary::-webkit-details-marker {
@@ -60,14 +61,18 @@ $movies = json_decode($json, true);
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
+      height: 100%;
+      text-align: center;
     }
     /* Freccetta custom */
     .arrow {
       transition: transform 0.3s;
       font-size: 20px;
+      transform: rotate(90deg);
+
     }
     details[open] .arrow {
-      transform: rotate(180deg);
+      transform: rotate(-90deg);
     }
     /* Dropdown posizionato a destra */
     .dropdown {
@@ -116,21 +121,11 @@ $movies = json_decode($json, true);
 <body>
   <div class="container">
     <?php 
-      foreach ($movies as $movie) { 
-    ?>
-      <details>
-        <summary>
-          <div class="title"><?php echo isset($movie['titolo']) ? $movie['titolo'] : 'Titolo non disponibile'; ?></div>
-          <div class="arrow">&#9660;</div>
-        </summary>
-        <div class="dropdown">
-        <p><?php echo isset($movie['titolo']) ? $movie['titolo'] : 'N/A'; ?></p>  
-        <p><strong>Stelle:</strong> <?php echo isset($movie['stelle']) ? $movie['stelle'] : 'N/A'; ?></p>
-          <p><strong>Genere:</strong> <?php echo isset($movie['genere']) ? $movie['genere'] : 'Non specificato'; ?></p>
-        </div>
-      </details>
-    <?php 
-      } 
+      foreach ($movies as $movie) {
+        $genere = new Genere($movie['genere']); 
+        $film = new Movie($movie['titolo'], $movie['stelle'], $genere);
+        $film->Elenco();
+      }
     ?>
   </div>
 </body>

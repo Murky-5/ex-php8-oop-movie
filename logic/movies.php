@@ -15,21 +15,23 @@ class Movie {
     }
     
     public function Elenco() {
-        echo "  <div class='box'>
-                    <div>
-                        Titolo: " . $this->Titolo . "
-                    </div>
-                    </br>";
-        echo "      <div>
-                        Stelle: " . $this->Stelle . "
-                    </div>
-                    </br>";
-        echo "      <div>
-                        Genere: " . $this->Genere->Genere() . "
-                    </div>
-                </div>
-                </br>
-                </br>";
+        $titolo = isset($this->Titolo) ? $this->Titolo : 'Titolo non disponibile';
+        $genere  = isset($this->Genere) ? $this->Genere->Genere() : 'Non specificato';
+        $stelle = isset($this->Stelle) ? $this->Stelle : 'N/A';
+
+        echo "
+         <details>
+            <summary>
+                <div class='title'>{$titolo}</div>
+                <div class='arrow'>&#9660;</div>
+            </summary>
+        <div class='dropdown'>
+        <p>{$titolo}</p>  
+        <p><strong>Stelle:</strong> {$stelle}</p>
+        <p><strong>Genere:</strong> {$genere}</p>
+        </div>
+      </details>
+        ";
     }
 }
 
